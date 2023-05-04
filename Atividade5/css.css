@@ -1,0 +1,99 @@
+/* Responsividade do Mobile */
+body {
+
+    font-family: 'Baloo Bhaina', 
+                 'Oswald', 
+                 cursive;
+    background-color: lightslategray;
+    font-weight: bold;
+    color: slategray;
+    text-align: center;
+
+}
+
+h1 {
+
+    font-size: 2rem;
+    text-shadow: 2px 
+                 2px 
+                 midnightblue;
+    color: lightsteelblue;
+    line-height: 1rem;
+
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background-color: lightgray;
+    width: 90%;
+    flex-wrap: wrap;
+
+}
+
+.assunto {
+
+    font-size: 1.5rem;
+    color: midnightblue;
+    padding: 12px 
+             12px 
+             0 
+             12px;
+    width: 100%;
+
+}
+
+.texto {
+
+    font-size: 1rem;
+    padding: 5px;
+    width: 100%;
+
+}
+
+.foto {
+
+    padding: 10px;
+    width: 80%;
+
+}
+
+img {
+
+    width: 100%;
+    filter: brightness(30%);
+
+}
+
+img:hover { filter: none; }
+
+.assunto:hover, .texto:hover { text-shadow: 3px 
+                                            3px 
+                                            lightsteelblue; }
+
+/* Responsividade do PC */
+@media screen and ( min-width: 980px ) {
+
+    .container { flex-wrap: nowrap; } 
+    
+    .assunto { width: 20%; }
+
+    .texto { 
+
+        font-size: 1.2rem;
+        padding: 12px 12px 0 12px;
+        width: 58%;
+
+    }
+
+    .foto {
+
+        padding: 12px 12px 0 12px;
+        width: 22%;
+
+    }
+
+}
